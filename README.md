@@ -271,6 +271,4 @@ See LICENSE file for more details.
 
 **Made with ❤️ and 🔥 in India**
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=journeyto0.taste-ka-tadka)
-
 </div>
