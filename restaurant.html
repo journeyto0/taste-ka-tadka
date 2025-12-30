@@ -1,309 +1,798 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Indian Restaurant</title>
-    <style>
-        /* Add your CSS code here */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #535150;
-            padding: 10px;
-        }
-
-        .navbar-logo {
-            width: 150px;
-            height: 150px;
-        }
-
-        .navbar-menu {
-            list-style: none;
-            display: flex;
-        }
-
-        .navbar-menu li {
-            margin: 0 10px;
-        }
-
-        .navbar-menu a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .navbar-menu a:hover {
-            color: black;
-        }
-
-        .hero {
-            height: 650px;
-            background-image: url("https://t3.ftcdn.net/jpg/06/67/91/62/360_F_667916283_oKLAB2ZJalJUmzjIRXMjJkqBcSxioZHX.jpg");
-            background-size:contain;
-            background-position:left;
-            display:flex;
-            justify-content: center;
-            align-items:center;
-        }
-
-        .hero-text {
-            color: white;
-            font-size: 50px;
-            font-weight: bold;
-            text-shadow: 2px 2px 5px black;
-        }
-
-        .menu {
-            padding: 40px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 20px;
-        }
-
-        .menu-item {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .menu-item img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-
-        .menu-item:hover img {
-            transform: scale(1.1);
-        }
-
-        .menu-item-info {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0,0,0,0.8);
-            color: white;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.5s;
-        }
-
-        .menu-item:hover .menu-item-info {
-            opacity: 1;
-        }
-
-        .menu-item-name {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .menu-item-price {
-            font-size: 18px;
-        }
-
-        .about {
-            padding: 40px;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .about-text {
-            width: 50%;
-        }
-
-        .about-text h2 {
-            color: #ff6600;
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
-
-        .about-text p {
-            font-size: 18px;
-            line-height: 1.5;
-            text-align: justify;
-        }
-
-        .about-image {
-            width: 40%;
-        }
-
-        .about-image img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
-        .contact {
-            padding: 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .contact-form {
-            width: 50%;
-            background-color: #f0f0f0;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .contact-form h2 {
-            color: #ff6600;
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
-
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            margin: 10px 0;
-            padding: 10px;
-            border: none;
-            outline: none;
-            font-size: 16px;
-        }
-
-        .contact-form button {
-            width: 100%;
-            margin: 10px 0;
-            padding: 10px;
-            border: none;
-            outline: none;
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            background-color: #ff6600;
-            cursor: pointer;
-        }
-
-        .contact-form button:hover {
-            background-color: #ff9900;
-        }
-
-        .contact-info {
-            width: 40%;
-        }
-
-        .contact-info h2 {
-            color: #ff6600;
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
-
-        .contact-info p {
-            font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: 10px;
-        }
-
-        .contact-info i {
-            color: #5c5957;
-            margin-right: 10px;
-        }
-
-        .footer {
-            background-color:#5c5957;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-
-        .footer p {
-            margin: 0;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taste Ka Tadka - Experience authentic Indian flavors. The taste you never taste before!">
+    <meta name="keywords" content="Indian restaurant, Indian food, samosa, biryani, paneer, Mumbai restaurant">
+    <meta name="author" content="Taste Ka Tadka">
+    <meta name="theme-color" content="#FF6600">
+    <meta property="og:title" content="Taste Ka Tadka | The Taste You Never Taste Before">
+    <meta property="og:description" content="Experience authentic Indian flavors with our signature dishes. Order now!">
+    <meta property="og:type" content="website">
+    <title>Taste Ka Tadka | The Taste You Never Taste Before | ⭐⭐⭐⭐⭐</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="restaurant.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <img src="logo.png" alt="Indian Restaurant Logo" class="navbar-logo">
-            <ul class="navbar-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader" role="alert" aria-live="polite">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <i class="fas fa-fire" aria-hidden="true"></i>
+            </div>
+            <div class="loader-spinner" aria-hidden="true"></div>
+            <p>Loading delicious content...</p>
+            <div class="loader-progress">
+                <div class="loader-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer" role="status" aria-live="polite"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Skip to Main Content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-left">
+                <span class="top-bar-item">
+                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                    <a href="tel:+919876543210">+91 98765 43210</a>
+                </span>
+                <span class="top-bar-item">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:info@tastekatadka.com">info@tastekatadka.com</a>
+                </span>
+                <span class="top-bar-item">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                    <span>Open: 11 AM - 11 PM</span>
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <div class="rating" aria-label="Rating 4.8 out of 5 stars based on 3547 reviews">
+                    <span class="stars" aria-hidden="true">★★★★★</span>
+                    <span>4.8/5 (3,547 Reviews)</span>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container navbar-content">
+            <a href="#home" class="navbar-logo" aria-label="Taste Ka Tadka - Home">
+                <div class="logo-img">
+                    <i class="fas fa-fire" aria-hidden="true"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Taste Ka Tadka</h1>
+                    <p>The Taste You Never Taste Before</p>
+                </div>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navbar-menu" id="navbarMenu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+                <li role="none"><a href="#menu" class="nav-link" role="menuitem">Menu</a></li>
+                <li role="none"><a href="#specials" class="nav-link" role="menuitem">Specials</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#testimonials" class="nav-link" role="menuitem">Reviews</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+                <li role="none">
+                    <a href="#order" class="order-btn" role="menuitem">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        <span>Order Now</span>
+                        <span class="cart-count" id="cartCount" aria-label="Cart items">0</span>
+                    </a>
+                </li>
             </ul>
         </div>
-        <div class="hero">
-            <h1 class="hero-text">Welcome to Indian Restaurant</h1>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-bg-animation" aria-hidden="true"></div>
+            <div class="hero-overlay" aria-hidden="true"></div>
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-award" aria-hidden="true"></i>
+                    <span>India's Most Loved Restaurant 2024</span>
+                </div>
+                <h1 class="hero-text" id="hero-title">
+                    <span class="text-reveal">Taste Ka</span>
+                    <span class="text-reveal highlight">Tadka</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="typed-text" id="typedText" aria-live="polite"></span>
+                    <span class="typed-cursor" aria-hidden="true">|</span>
+                </p>
+                <div class="hero-rating" aria-label="Rated number 1 by food lovers nationwide">
+                    <span class="stars animated-stars" aria-hidden="true">★★★★★</span>
+                    <span class="hero-rating-text">Rated #1 by Food Lovers Nationwide</span>
+                </div>
+
+                <!-- Hero Stats -->
+                <div class="hero-stats" aria-label="Our achievements">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number" data-target="45000" aria-label="45000 plus">0</span>
+                        <span class="hero-stat-suffix" aria-hidden="true">+</span>
+                        <span class="hero-stat-label">Happy Customers</span>
+                    </div>
+                    <div class="hero-stat-divider" aria-hidden="true"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number" data-target="50" aria-label="50 plus">0</span>
+                        <span class="hero-stat-suffix" aria-hidden="true">+</span>
+                        <span class="hero-stat-label">Dishes</span>
+                    </div>
+                    <div class="hero-stat-divider" aria-hidden="true"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number" data-target="8" aria-label="8 plus">0</span>
+                        <span class="hero-stat-suffix" aria-hidden="true">+</span>
+                        <span class="hero-stat-label">Years</span>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn-primary">
+                        <i class="fas fa-utensils" aria-hidden="true"></i>
+                        <span>Explore Menu</span>
+                    </a>
+                    <a href="tel:+919876543210" class="btn-secondary">
+                        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                        <span>Call Now</span>
+                    </a>
+                    <button class="btn-tertiary" id="watchVideoBtn" aria-label="Watch our video">
+                        <i class="fas fa-play-circle" aria-hidden="true"></i>
+                        <span>Watch Video</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator" aria-hidden="true">
+                <span>Scroll Down</span>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features" aria-labelledby="features-title">
+            <div class="container">
+                <h2 id="features-title" class="visually-hidden">Our Features</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-leaf"></i></div>
+                        <h3>Fresh Ingredients</h3>
+                        <p>We use only the freshest, locally sourced ingredients in all our dishes.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-fire-alt"></i></div>
+                        <h3>Authentic Recipes</h3>
+                        <p>Traditional recipes passed down through generations of master chefs.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-truck"></i></div>
+                        <h3>Fast Delivery</h3>
+                        <p>Hot and fresh food delivered to your doorstep within 30 minutes.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-heart"></i></div>
+                        <h3>Made with Love</h3>
+                        <p>Every dish is crafted with passion and love for authentic Indian cuisine.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section" aria-labelledby="menu-title">
+            <div class="container">
+                <div class="section-title">
+                    <span class="section-badge">Our Menu</span>
+                    <h2 id="menu-title">Signature Dishes</h2>
+                    <p>Experience flavors that will tantalize your taste buds like never before</p>
+                </div>
+
+                <!-- Menu Filter -->
+                <div class="menu-filter" role="tablist" aria-label="Filter menu by category">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+                    <button class="filter-btn" data-filter="starters" role="tab" aria-selected="false">Starters</button>
+                    <button class="filter-btn" data-filter="main" role="tab" aria-selected="false">Main Course</button>
+                    <button class="filter-btn" data-filter="breads" role="tab" aria-selected="false">Breads</button>
+                    <button class="filter-btn" data-filter="desserts" role="tab" aria-selected="false">Desserts</button>
+                </div>
+
+                <div class="menu" id="menu-grid" role="tabpanel">
+                    <!-- Samosa -->
+                    <div class="menu-item" data-category="starters">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80" alt="Samosa">
+                        <span class="menu-item-badge bestseller">Bestseller</span>
+                        <span class="menu-item-tag veg">🌱</span>
+                        <button class="quick-add" data-item="Samosa" data-price="80"><i class="fas fa-plus"></i></button>
+                        <button class="favorite-btn" aria-label="Add to favorites" aria-pressed="false"><i class="far fa-heart"></i></button>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Samosa</h3>
+                                <span class="menu-item-price">₹80</span>
+                            </div>
+                            <p class="menu-item-desc">Crispy fried pastry filled with spiced potatoes</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-rating"><i class="fas fa-star"></i> 4.8 (320)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pakora -->
+                    <div class="menu-item" data-category="starters">
+                        <img loading="lazy" src="https://silkroadrecipes.com/wp-content/uploads/2022/06/Potato-Pakora-square.jpg" alt="Pakora">
+                        <span class="menu-item-badge popular">Popular</span>
+                        <span class="menu-item-tag veg">🌱</span>
+                        <button class="quick-add" data-item="Pakora" data-price="90"><i class="fas fa-plus"></i></button>\
+                        <button class="favorite-btn" aria-label="Add to favorites" aria-pressed="false"><i class="far fa-heart"></i></button>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Pakora</h3>
+                                <span class="menu-item-price">₹90</span>
+                            </div>
+                            <p class="menu-item-desc">Vegetable fritters in spiced gram flour batter</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-rating"><i class="fas fa-star"></i> 4.6 (215)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Chicken Biryani -->
+                    <div class="menu-item" data-category="main">
+                        <img loading="lazy" src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_960,w_960//InstamartAssets/Receipes/hyderabadi_chicken_dum_biryani.webp" alt="Chicken Biryani">
+                        <span class="menu-item-badge signature">Signature</span>
+                        <span class="menu-item-tag non-veg">🍗</span>
+                        <button class="quick-add" data-item="Chicken Biryani" data-price="250"><i class="fas fa-plus"></i></button>
+                        <button class="favorite-btn" aria-label="Add to favorites" aria-pressed="false"><i class="far fa-heart"></i></button>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Chicken Biryani</h3>
+                                <span class="menu-item-price">₹250</span>
+                            </div>
+                            <p class="menu-item-desc">Fragrant rice cooked with tender chicken</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-rating"><i class="fas fa-star"></i> 4.9 (512)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paneer Tikka Masala -->
+                    <div class="menu-item" data-category="main">
+                        <img loading="lazy" src="https://i0.wp.com/myvegetarianroots.com/wp-content/uploads/2025/10/black-eyed-peas-tempeh-curry-10.jpg?fit=1277%2C1920&ssl=1" alt="Paneer Tikka Masala">
+                        <span class="menu-item-badge mustTry">Must Try</span>
+                        <span class="menu-item-tag veg">🌱</span>
+                        <button class="quick-add" data-item="Paneer Tikka Masala" data-price="280"><i class="fas fa-plus"></i></button>
+                        <button class="favorite-btn" aria-label="Add to favorites" aria-pressed="false"><i class="far fa-heart"></i></button>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Paneer Tikka Masala</h3>
+                                <span class="menu-item-price">₹280</span>
+                            </div>
+                            <p class="menu-item-desc">Cottage cheese in creamy tomato sauce</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-rating"><i class="fas fa-star"></i> 4.7 (405)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Naan -->
+                    <div class="menu-item" data-category="breads">
+                        <img loading="lazy" src="https://fullofplants.com/wp-content/uploads/2019/05/potato-stuffed-naan-vegan-thumb-2.jpg" alt="Naan">
+                        <span class="menu-item-badge new">New</span>
+                        <span class="menu-item-tag veg">🌱</span>
+                        <button class="quick-add" data-item="Naan" data-price="50"><i class="fas fa-plus"></i></button>
+                        <button class="favorite-btn" aria-label="Add to favorites" aria-pressed="false"><i class="far fa-heart"></i></button>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Naan</h3>
+                                <span class="menu-item-price">₹50</span>
+                            </div>
+                            <p class="menu-item-desc">Soft Indian bread baked in clay oven</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-rating"><i class="fas fa-star"></i> 4.8 (360)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Tandoori Roti -->
+                    <div class="menu-item" data-category="breads">
+                        <img loading="lazy" src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/09/tandoori-roti-recipe.jpg" alt="Tandoori Roti">
+                        <span class="menu-item-badge bestseller">Bestseller</span>
+                        <span class="menu-item-tag veg">🌱</span>
+                        <button class="quick-add" data-item="Tandoori Roti" data-price="30"><i class="fas fa-plus"></i></button>
+                        <button class="favorite-btn" aria-label="Add to favorites" aria-pressed="false"><i class="far fa-heart"></i></button>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Tandoori Roti</h3>
+                                <span class="menu-item-price">₹30</span>
+                            </div>
+                            <p class="menu-item-desc">Crispy and crunchy Indian flatbread cooked in a tandoor</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-rating"><i class="fas fa-star"></i> 4.9 (480)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gulab Jamun - FIXED IMAGE -->
+                    <div class="menu-item" data-category="desserts">
+                        <img loading="lazy" src="https://bombaysweetshop.com/cdn/shop/files/LAH-08548.jpg?v=1761418289&width=375" alt="Gulab Jamun">
+                        <span class="menu-item-badge sweet">Sweet</span>
+                        <span class="menu-item-tag veg">🌱</span>
+                        <button class="quick-add" data-item="Gulab Jamun" data-price="120"><i class="fas fa-plus"></i></button>
+                        <button class="favorite-btn" aria-label="Add to favorites" aria-pressed="false"><i class="far fa-heart"></i></button>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Gulab Jamun</h3>
+                                <span class="menu-item-price">₹120</span>
+                            </div>
+                            <p class="menu-item-desc">Soft balls in sugar syrup</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-rating"><i class="fas fa-star"></i> 4.7 (290)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kheer -->
+                    <div class="menu-item" data-category="desserts">
+                        <img loading="lazy" src="https://www.cookwithmanali.com/wp-content/uploads/2020/05/Instant-Pot-Lauki-Kheer.jpg" alt="Kheer">
+                        <span class="menu-item-badge healthy">Healthy</span>
+                        <span class="menu-item-tag veg">🌱</span>
+                        <button class="quick-add" data-item="Kheer" data-price="100"><i class="fas fa-plus"></i></button>
+                        <button class="favorite-btn" aria-label="Add to favorites" aria-pressed="false"><i class="far fa-heart"></i></button>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Kheer</h3>
+                                <span class="menu-item-price">₹100</span>
+                            </div>
+                            <p class="menu-item-desc">Rice pudding with milk and nuts</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-item-rating"><i class="fas fa-star"></i> 4.8 (340)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-cta">
+                    <a href="#" class="btn-primary">
+                        <i class="fas fa-th-list" aria-hidden="true"></i>
+                        <span>View Full Menu</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Today's Specials Section -->
+        <section class="specials" id="specials" aria-labelledby="specials-title">
+            <div class="container">
+                <div class="section-title">
+                    <span class="section-badge">Limited Time</span>
+                    <h2 id="specials-title">Today's Specials</h2>
+                    <p>Don't miss out on our chef's exclusive creations</p>
+                </div>
+                <div class="specials-grid">
+                    <!-- Chicken Tikka Masala Special -->
+                    <div class="special-card featured">
+                        <div class="special-badge">
+                            <i class="fas fa-fire"></i>
+                            Hot Deal
+                        </div>
+                        <div class="special-image">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=80" alt="Chicken Tikka Masala">
+                            <div class="special-overlay">
+                                <span class="discount">40% OFF</span>
+                            </div>
+                        </div>
+                        <div class="special-content">
+                            <h3>Chicken Tikka Masala</h3>
+                            <p>Tender chicken pieces in aromatic tomato-based curry</p>
+                            <div class="special-price">
+                                <span class="original-price">₹350</span>
+                                <span class="current-price">₹210</span>
+                            </div>
+                            <div class="special-timer" id="special1Timer">⏱️ 05:00:00</div>
+                            <button class="btn-primary special-order" data-item="Chicken Tikka Masala Special" data-price="210">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tandoori Paneer -->
+                    <div class="special-card">
+                        <div class="special-badge">
+                            <i class="fas fa-crown"></i>
+                            Premium
+                        </div>
+                        <div class="special-image">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80" alt="Tandoori Paneer">
+                            <div class="special-overlay">
+                                <span class="discount">35% OFF</span>
+                            </div>
+                        </div>
+                        <div class="special-content">
+                            <h3>Tandoori Paneer</h3>
+                            <p>Marinated paneer grilled to perfection</p>
+                            <div class="special-price">
+                                <span class="original-price">₹320</span>
+                                <span class="current-price">₹208</span>
+                            </div>
+                            <div class="special-timer" id="special2Timer">⏱️ 05:00:00</div>
+                            <button class="btn-primary special-order" data-item="Tandoori Paneer" data-price="208">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Butter Chicken Combo -->
+                    <div class="special-card">
+                        <div class="special-badge">
+                            <i class="fas fa-utensils"></i>
+                            Chef's Pick
+                        </div>
+                        <div class="special-image">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80" alt="Butter Chicken Combo">
+                            <div class="special-overlay">
+                                <span class="discount">30% OFF</span>
+                            </div>
+                        </div>
+                        <div class="special-content">
+                            <h3>Butter Chicken Combo</h3>
+                            <p>Chicken in creamy butter sauce with naan & rice</p>
+                            <div class="special-price">
+                                <span class="original-price">₹450</span>
+                                <span class="current-price">₹315</span>
+                            </div>
+                            <div class="special-timer" id="special3Timer">⏱️ 05:00:00</div>
+                            <button class="btn-primary special-order" data-item="Butter Chicken Combo" data-price="315">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about" aria-labelledby="about-title">
+            <div class="container about-container">
+                <div class="about-text">
+                    <span class="section-badge">Our Story</span>
+                    <h2 id="about-title">About Taste Ka Tadka</h2>
+                    <p>Welcome to <strong>Taste Ka Tadka</strong> - where every dish tells a story and every bite is an unforgettable experience!</p>
+                    <p>Our secret? A perfect blend of authentic Indian spices, fresh ingredients, and recipes perfected over generations.</p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Authentic Recipes</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fresh Ingredients</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert Chefs</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quick Delivery</span>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">🏆</div>
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Awards Won</span>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">👨‍🍳</div>
+                            <span class="stat-number" data-target="25">0</span>
+                            <span class="stat-label">Expert Chefs</span>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⭐</div>
+                            <span class="stat-number" data-target="4.8">0</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-wrapper">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Restaurant Interior">
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="experience-years">8+</span>
+                        <span class="experience-text">Years of Excellence</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-title">
+                    <span class="section-badge">Testimonials</span>
+                    <h2 id="testimonials-title">What Our Customers Say</h2>
+                </div>
+                <div class="testimonials-slider" id="testimonialsSlider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Best Indian food I've ever tasted! The flavors are so authentic and the service is amazing. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&h=100&q=80" alt="Raj Kumar">
+                            <div class="author-info">
+                                <h4>Raj Kumar</h4>
+                                <span>Food Critic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The biryani here is to die for! Every grain is perfectly flavored. This has become my favorite restaurant."</p>
+                        <div class="testimonial-author">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&h=100&q=80" alt="Priya Sharma">
+                            <div class="author-info">
+                                <h4>Priya Sharma</h4>
+                                <span>Regular Customer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Incredible experience! The paneer tikka masala is simply divine. The staff is very friendly and attentive."</p>
+                        <div class="testimonial-author">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80" alt="Arjun Patel">
+                            <div class="author-info">
+                                <h4>Arjun Patel</h4>
+                                <span>Food Blogger</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Authentic Indian cuisine at its finest! The ambiance is welcoming and the food is absolutely delicious."</p>
+                        <div class="testimonial-author">
+                            <img loading="lazy" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&h=100&q=80" alt="Sarah Williams">
+                            <div class="author-info">
+                                <h4>Sarah Williams</h4>
+                                <span>Traveler</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-nav">
+                    <button class="testimonial-nav-btn" id="prevTestimonial" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonials-dots" id="testimonialsDots"></div>
+                    <button class="testimonial-nav-btn" id="nextTestimonial" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-container">
+                <div class="contact-form">
+                    <h2 id="contact-title">Get In Touch</h2>
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name">Your Name *</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Your Email *</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder=" " required pattern="[0-9]{10}">
+                            <label for="phone">Phone Number *</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="order">Place an Order</option>
+                                <option value="bulk">Bulk Order</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                            <label for="subject">Subject *</label>
+                        </div>
+                        <button type="submit" class="btn-primary submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h2>Visit Us</h2>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Address</h4>
+                            <p>Shop No. 15-16, Food Street Plaza, Mumbai - 400001, India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@tastekatadka.com">info@tastekatadka.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Hours</h4>
+                            <p>Mon-Sun: 11:00 AM - 11:00 PM<br>Holidays: 12:00 PM - 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter" id="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2>Subscribe to Our Newsletter</h2>
+                        <p>Get the latest updates on new dishes and special offers delivered to your inbox!</p>
+                    </div>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="newsletter-input-group">
+                            <input type="email" placeholder="Enter your email" required aria-label="Email address">
+                            <button type="submit" aria-label="Subscribe to newsletter">
+                                <i class="fas fa-paper-plane"></i> Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-fire"></i>
+                        <h3>Taste Ka Tadka</h3>
+                    </div>
+                    <p class="footer-desc">Experience authentic Indian flavors crafted with love and tradition. Your taste, our passion!</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@tastekatadka.com">info@tastekatadka.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Taste Ka Tadka. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
         </div>
-        <div class="menu">
-            <div class="menu-item">
-                <img src="https://th.bing.com/th/id/R.5e9d914158f20abde43751bc56170aff?rik=IVjPf86fA0ExdQ&riu=http%3a%2f%2fwww.zedamagazine.com%2fwp-content%2fuploads%2f2018%2f06%2fIndian-Food-Samosa-Dish-HD-Wallpapers.jpg&ehk=CIZsxVe5CLA%2fpZXkiCdJuoTdrhucm2fgYqo%2fkXVfHls%3d&risl=&pid=ImgRaw&r=0" alt="Samosa">
-                <div class="menu-item-info">
-                    <span class="menu-item-name">Samosa</span>
-                    <span class="menu-item-price">$2.99</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="https://i.pinimg.com/originals/2c/23/a9/2c23a9a24b7b031f5ad01c900a9993d7.jpg" alt="Paneer">
-                <div class="menu-item-info">
-                    <span class="menu-item-name">Paneer</span>
-                    <span class="menu-item-price">$5.99</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="https://www.indianpolitics.co.in/wp-content/uploads/2021/02/dosa_c.jpg" alt="Dosa">
-                <div class="menu-item-info">
-                    <span class="menu-item-name">Dosa</span>
-                    <span class="menu-item-price">$4.99</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="https://maharajaroyaldining.com/wp-content/uploads/2024/05/Tandoori-Roti-4.webp" alt="Tandoori-Roti">
-                <div class="menu-item-info">
-                    <span class="menu-item-name">Tandoori Roti</span>
-                    <span class="menu-item-price">$1.99</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="https://assets.limetray.com/assets/image_manager/uploads/5128/Peshawari%20Chole%20Biryani%20(2).jpg" alt="Veg-Biryani">
-                <div class="menu-item-info">
-                    <span class="menu-item-name">Veg Biryani</span>
-                    <span class="menu-item-price">$7.99</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="https://indianfoodcourt.co.nz/images/gall-02.jpg" alt="Dal">
-                <div class="menu-item-info">
-                    <span class="menu-item-name">Dal</span>
-                    <span class="menu-item-price">$3.99</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="https://www.cookwithkushi.com/wp-content/uploads/2020/03/IMG_5904g-768x858.jpg" alt="Naan">
-                <div class="menu-item-info">
-                    <span class="menu-item-name">Naan</span>
-                    <span class="menu-item-price">$1.99</span>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="https://www.funfoodfrolic.com/wp-content/uploads/2020/07/Gulab-Jamun-Thumbnail-360x361.jpg" alt="Gulab Jamun">
-                <div class="menu-item-info">
-                    <span class="menu-item-name">Gulab Jamun</span>
-                    <span class="menu-item-price">$2.99</span>
-                </div>
-            </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="video-title">
+        <div class="video-modal-content">
+            <button class="close-modal" id="closeVideoModal" aria-label="Close video">×</button>
+            <iframe id="videoFrame" src="" frameborder="0" allowfullscreen title="Restaurant Promotion Video"></iframe>
         </div>
-        <div class="about">
-            <div class="about-text">
-                <h2>About Us</h2>
-                <p>Indian Restaurant is a family-owned and operated restaurant that serves authentic and delicious Indian cuisine. We use fresh ingredients, traditional recipes, and a variety of spices to create dishes that will satisfy your taste buds. Whether you are looking for a vegetarian, vegan, gluten-free, or halal option, we have something for everyone. Come and enjoy our cozy and friendly atmosphere, our attentive and courteous service, and our affordable prices. We also offer catering services for any occasion, such as weddings, birthdays, corporate events, and more. Contact us today to make a reservation or place an order.</p>
-            </div>
-            <div class="about-image">
-                <img src="about.jpg" alt
+    </div>
+
+    <!-- JavaScript -->
+    <script src="restaurant.js"></script>
+</body>
+</html>
